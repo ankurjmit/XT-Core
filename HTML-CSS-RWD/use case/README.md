@@ -1,7 +1,7 @@
-Use Cases Details
-The folder contains the following use cases week-wise.
+#Use Cases Details
+#The folder contains the following use cases week-wise.
 
-Week1
+#Week1
 1. UC1->Food Receipe
 Create a Food Recipe one column layout page using layout properties, hacks, margins, padding,borders
 
@@ -14,7 +14,7 @@ Create site called "Sapient Tours" by adding nav bars, image list, footers which
 4. UC4->Flex Calculator
 Create calculator using flexbox layout, which shows how to create complex layouts using flexbox properties.
 
-Week2
+#Week2
 5. UC5-> Agoda-RWD
 6. UC6-> RWD Tours Website
 7. UC7-> Table Example
