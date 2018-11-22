@@ -17,3 +17,4 @@ Create calculator using flexbox layout, which shows how to create complex layout
 Week2
 5. UC5-> Agoda-RWD
 6. UC6-> RWD Tours Website
+7. UC7-> Table Example
