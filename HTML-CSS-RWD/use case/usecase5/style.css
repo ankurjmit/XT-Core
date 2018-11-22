@@ -1,0 +1,488 @@
+html,body,* {
+    font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width:450px) and (max-width:750px){ 
+html,body,* {
+    font-size: 7px;
+}
+.TileContainer {
+    background: linear-gradient(#f68a73, #ffdf8f);
+    display: flex;
+    padding: 1rem 4rem;
+    justify-content: space-around;
+}
+.TileContainer--left {
+    max-width: 50%;
+    padding: 4rem 1rem;
+}
+.popularDestinations__wrapper {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    height: 12rem;
+}
+.popularDestinations--heading {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem; 
+    letter-spacing: 2px;    
+}
+.destination--img {
+    width: 22rem;
+    margin: 5px;
+    box-shadow: 1px 1px 0px #888888;
+    border-radius: 3px;
+}
+}
+@media (min-width:750px) and (max-width:1500px){ 
+html,body,* {
+    font-size: 10px;
+}
+.TileContainer {
+    background: linear-gradient(#f68a73, #ffdf8f);
+    display: flex;
+    padding: 1rem 4rem;
+    justify-content: space-around;
+}
+.overhead-box--wrapper {
+    padding: 1rem 5rem;
+    display: flex;
+}
+.TileContainer--left {
+    max-width: 50%;
+    padding: 4rem 1rem;
+}
+.popularDestinations__wrapper {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    height: 12rem;
+}
+.popularDestinations--heading {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem; 
+    letter-spacing: 2px;    
+}
+.destination--img {
+    width: 22rem;
+    margin: 5px;
+    box-shadow: 1px 1px 0px #888888;
+    border-radius: 3px;
+}
+}
+@media (max-width:550px){ 
+html,body,* {
+    font-size: 10px;
+}
+.TileContainer {
+    background: linear-gradient(#f68a73, #ffdf8f);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4rem;
+    justify-content: space-around;
+}
+.TileContainer--left {
+    max-width: 100%;
+    padding: 4rem 1rem;
+}
+.overhead-box--wrapper {
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.popularDestinations__wrapper {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.popularDestinations--heading {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 4rem; 
+    letter-spacing: 2px;    
+ }
+.destination--img {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    box-shadow: 1px 1px 0px #888888;
+    border-radius: 3px;
+}
+}
+
+
+/*----------------------- Navigtion Bar css ---------------------------------------*/
+
+.header {
+background: #fff;
+height: 60px;
+margin: 0 auto;
+}
+
+.header-section {
+display: flex;
+}
+
+.header-container--left {
+display: flex;
+padding: 0 1rem;
+
+}
+
+.navigationListLeft {
+list-style: none;
+margin-top: 2rem;
+}
+
+.navigationListLeft li {
+display: inline-block;
+padding: 0 1.5rem;
+font-size: 1.5rem;
+}
+
+.navigationListLeft a {
+text-decoration: none;
+color: rgba(0, 0, 0, .75);
+font-family: sans-serif;
+font-weight: 600;
+}
+
+.navigationListRight {
+display: flex;
+justify-content: flex-end;
+flex: 1;
+}
+
+.dots {
+margin-top: 5px;
+font-size: 25px;
+letter-spacing: 8px;
+margin-left: 15px;
+}
+
+.navigationListRight ul {
+margin: 0;
+}
+
+.navigationListRight li {
+display: inline-block;
+padding: 10px 0px;
+font-size: 13px;
+}
+
+.navigationListRight button {
+background: transparent;
+color: #488bf8;
+text-transform: uppercase;
+}
+
+.btn {
+display: inline-block;
+height: 40px;
+padding: 0 20px;
+border: 1px solid transparent;
+border-radius: 3px;
+font-size: 12px;
+font-weight: 700;
+line-height: 38px;
+vertical-align: middle;
+outline: 0;
+white-space: nowrap;
+user-select: none;
+text-align: center;
+text-decoration: none;
+transition: all .3s ease;
+}
+
+.btn-line {
+border: 1px solid #488bf8;
+}
+
+/*----------------------- Main Left Side content css ---------------------------------------*/
+
+
+.welcome--heading {
+color: white;
+}
+
+.welcome--heading h1 {
+font-size: 2.5rem;
+font-weight: 300;
+text-transform: uppercase;
+line-height: 1.5;
+margin: 0
+}
+
+.welcome--heading h2 {
+font-size: 17px;
+font-weight: 200;
+}
+.searchBox {
+padding: 4rem 0;
+}
+.search--input {
+padding: 1em;
+font-size: 2rem;
+width: 90%;
+box-sizing: border-box;
+margin-top: 2rem;
+}
+.personCount {
+display: flex;
+justify-content: space-between;
+width: 90%;
+}
+.personCount__input {
+width: 60%;
+}
+.button-wrapper {
+margin-top: 2rem;
+width: 40%;
+}
+.search-btn {
+padding: 9% 32%;
+margin-bottom: 1rem;
+background-color: #488bf8;
+font-size: 200%;
+text-transform: uppercase;
+color: #fff;
+letter-spacing: 1px;
+max-width: 100%;
+}
+.image--wrapper img {
+max-width: 90%;
+}
+
+/*----------------------- Main Right Side content css ---------------------------------------*/
+
+.TileContainer--right {
+padding: 0;
+}
+.TileContainer--right__wrapper {
+display: flex;
+flex-direction: column;
+}
+.twoBox {
+display: flex;
+}
+.twoBox .box1 {
+padding: 4rem;
+width: 50%;
+background: #82d1e8;
+margin-right: 1rem;
+text-align: center;
+box-sizing: border-box;
+}
+.twoBox .box1 h1 {
+color: white;
+font-size: 2.5rem;
+font-weight: 200;
+}
+.box1 .discount {
+font-size: 6rem;
+color: white;
+letter-spacing: 1rem;
+}
+
+.box1 .destination {
+font-size: 2rem;
+color: white;
+font-weight: 200;
+}
+
+.box1 .best {
+font-size: 1.9rem;
+color: #195d80;
+padding: 1.5rem;
+letter-spacing: 1px;
+line-height: 2.4rem;
+}
+.box2 {
+background-color: #e2d1ce;
+width: 50%;
+}
+.box2 img {
+max-width: 100%;
+height: auto;
+}
+
+.hostDiv {
+padding: 4rem 5rem;
+}
+.becomehost {
+font-size: 2.5rem;
+color: #0a4867;
+padding: 1rem 0;
+}
+.hostDetail {
+color: #0a4867;
+font-size: 1.4rem;
+line-height: 22px;
+letter-spacing: 0.5px;
+}
+
+
+.box3 {
+background-image: url(https://cdn6.agoda.net/images/MVC/default/background_image/tiles/NHA-group-min-960x470-min.jpg);
+background-position: center;
+color: white;
+margin-top: 1rem;
+padding: 4rem 7rem;
+}
+
+.box3 p {
+font-size: 1.7rem;
+line-height: 3rem;
+}
+.margin {
+margin: 2rem 0;
+}
+
+.box3 h2 {
+font-size: 18px;
+font-weight: 400;
+margin: 0;
+line-height: 25px;
+}
+.dealButton {
+text-align: center;
+border-radius: .3rem;
+border-style: solid;
+border: 1px solid #488bf8;
+outline: 0;
+margin-bottom: 0;
+padding: 2rem 3rem;
+font-size: 1.5rem;
+font-weight: 400;
+color: #488bf8;
+background-color: #fff;
+cursor: pointer;
+}
+.list-btn-wrapper {
+padding: 2rem 0;
+box-sizing: border-box;
+}
+.list-btn {
+padding: 2rem 2rem;
+color: red;
+border-color: red;
+}
+.overhead {
+padding: 1rem;
+margin-top: 5rem;
+}
+
+
+
+.overhead-box--wrapper div {
+margin: .5rem;
+border: 1px solid #f3eded;
+padding: 15px 35px;
+text-align: center;
+border-radius: 10px;
+}
+
+.overhead-box--wrapper div h2 {
+padding: 10px 15px;
+color: lightblue;
+margin: 0;
+font-weight: 400;
+font-size: 2.3rem;
+}
+.overhead-box--wrapper div h3 {
+color: #bbbbbb;
+margin: 0;
+font-weight: 300;
+font-size: 1.5rem;
+}
+.overhead-box--wrapper div p{
+font-size: 1.8rem;
+color: #212121;
+padding: 2rem;
+}
+.overhead-box--wrapper div span{
+font-size: 17px;
+color: #969292;
+}
+
+.overhead--title {
+text-align: center;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 1px;
+font-size: 3rem;   
+}
+
+footer {
+background: #333;
+text-align: center;
+}
+.footer__wrapper {
+padding: 40px 10px;
+margin-top: 30px;
+}
+footer img {
+height: 100px;
+width: 100px;
+margin: 10px 50px;
+}
+.Footer-copyrights {
+background-color: #333;
+color: hsla(0,0%,100%,.5);
+font-size: 12px;
+}
+.popularDestinations {
+padding: 1rem 15rem;;
+margin-top: 5rem;
+}
+
+.goa {
+background-image: url(https://www.visittnt.com/blog/wp-content/uploads/2017/08/Vagator-beach.jpg), linear-gradient(transparent 38%,#000);
+background-repeat: no-repeat;
+background-position: center;
+}
+.ncr {
+background-image: url(https://www.visittnt.com/blog/wp-content/uploads/2017/08/Vagator-beach.jpg), linear-gradient(transparent 38%,#000);
+background-repeat: no-repeat;
+background-position: center;
+}
+.jaipur {
+background-image: url(https://www.parkregisjaipur.in/files/2012/08/jaipur1.jpg);
+background-position: center;
+}
+.bhopal {
+background-image: url(https://www.visittnt.com/blog/wp-content/uploads/2017/08/Vagator-beach.jpg);
+background-position: center;
+}
+.mumbai {
+background-image: url(https://static.toiimg.com/thumb/53891735/The-Gateway-of-India.jpg?width=748&height=499);
+background-position: center;
+}
+.kkr {
+background-image: url(https://www.livemint.com/rf/Image-621x414/LiveMint/Period2/2018/02/08/Photos/Processed/kerala-kbvH--621x414@LiveMint.jpg);
+background-position: center;
+}
+.kerla {
+background-image: url(https://www.livemint.com/rf/Image-621x414/LiveMint/Period2/2018/02/08/Photos/Processed/kerala-kbvH--621x414@LiveMint.jpg);
+background-position: center;
+}
+.chenai {
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrvd5Ac3bpuKZ1c5D793sIUlg9_K4-4wvV17Wf2YuVRM1k3dM);
+background-position: center;
+}
+.destination--name {
+position: relative;
+top: 60px;
+left: 20px;
+color: #f1ebeb;
+}
+.destination--name span {
+font-size: 13px;
+}
