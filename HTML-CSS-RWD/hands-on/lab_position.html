@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab:Position</title>
+    <style>
+        body {
+            width: 480px;
+            margin: 0 auto;
+            background: lightcyan;
+        }
+
+        .outermost {
+            background: lightblue;
+            height: 500px;
+        }
+
+        .inner {
+            border: 3px solid lightgreen;
+            position: relative;
+            left: -30px;
+            top: 50px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            background: lightgray;
+        }
+
+        .innermost1 {
+            position: relative;
+            left: 40px;
+            width: 100px;
+            border: 1px solid green;
+            float: left;
+            top: 35px;
+            background: antiquewhite;
+            border: 3px solid lightgreen;
+
+        }
+
+        .innermost2 {
+            position: relative;
+            left: 200px;
+            width: 100px;
+            border: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outermost">
+        <div class="inner">
+            <h2>Come see the fantastic Tower!</h2>
+            <p>Do you relly know the coit Tower is a monument to the firefighter of San francisco ? It was build in
+                2010 ans its height is 210 feet.</p>
+
+        </div>
+        <div class="innermost1">
+            this is the another div
+            this is the another div
+            this is the another div
+        </div>
+        <div class="innermost2">
+            this is the another div
+            this is the another div
+            this is the another div
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

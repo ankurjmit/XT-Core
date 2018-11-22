@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grids</title>
+    <style>
+        body {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .wrapper {
+            display: grid;
+            height: 500px;
+            grid-template-columns: 1fr 1fr;
+            /* grid-template-rows: 100px 100px 100px 100px 100px; */
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap:5px;
+        }
+        div {
+            background-color: green;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+        <div class="wrapper">
+            <div>1
+            </div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>4</div>
+        </div>
+</body>
+</html>

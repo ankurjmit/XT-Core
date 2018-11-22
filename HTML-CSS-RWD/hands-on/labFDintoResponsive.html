@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        #page {
+            width: 66.666666666%;
+            background: lightblue;
+            margin: 0 auto;
+        }
+
+        .main {
+            width: 58.958333333%;
+            float: left;
+        }
+
+        .lede {
+            width: 100px;
+            padding: 1%;
+        }
+
+        @media (max-width:450px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        @media (min-width:450px) and (max-width:1560px) {
+            body {
+                background-color: gold;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page">
+        <div class="blog-section">
+            <h1 class="lede">Welcome to <a href="#">The Bot Blog</a></h1>
+            <div class="main">Main Content </div>
+            <div class="other">Other</div>
+        </div>
+    </div>
+</body>
+
+</html>
