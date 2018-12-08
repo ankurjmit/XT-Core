@@ -13,23 +13,26 @@
 
 <body>
     <div class="container">
-        <form action="#">
+        <form action="#" id="form">
             <div class="form-group">
                 <label for="name">Name<abbr title="This field is mandatory">*</abbr></label>
-                <input type="text" class="form-control" id="name" placeholder="Enter full name" required>
+                <input type="text" class="form-control" id="name" placeholder="Enter full name">
+                <span class="error" id="nameErrorSpan">Name is required</span>
             </div>
             <div class="form-group">
                 <label for="company">Company<abbr title="This field is mandatory">*</abbr></label>
-                <input type="text" class="form-control" id="company" placeholder="Enter your company name" required>
+                <input type="text" class="form-control" id="company" placeholder="Enter your company name">
+                <span class="error" id="companyErrorSpan">Company name is required</span>
             </div>
             <div class="form-group">
                 <label for="email">Email<abbr title="This field is mandatory">*</abbr></label>
-                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                <span class="error" id="emailErrorSpan">Email is required</span>
             </div>
             <div class="form-check form-check-inline">
                 <fieldset>
                     <legend>Gender</legend>
-                    <input class="form-check-input" type="radio" name="gender" id="male" required>
+                    <input class="form-check-input" type="radio" name="gender" id="male" checked>
                     <label class="form-check-label" for="male">Male</label>
                     <input class="form-check-input" type="radio" name="gender" id="female" required>
                     <label class="form-check-label" for="femail">Female</label>
@@ -39,20 +42,23 @@
                 <div class="form-group form-check-inline">
                     <fieldset>
                         <legend>Technology</legend>
-                        <input class="form-check-input" type="checkbox" name="tech" id="javascript" required>
+                        <input class="form-check-input" type="checkbox" name="tech" id="javascript">
                         <label class="form-check-label" for="javascript">Javascript</label>
-                        <input class="form-check-input" type="checkbox" name="tech" id="java" required>
+                        <input class="form-check-input" type="checkbox" name="tech" id="java" >
                         <label class="form-check-label" for="java">Java</label>
                     </fieldset>
                 </div>
             </div>
             <div class="form-group">
                 <label for="location">Location</label>
-                <select class="form-control" name="location" id="location" required>
+                <select class="form-control" name="location" id="location">
                     <option value="Gurgaon">Gurgaon</option>
                     <option value="Noida">Noida</option>
                     <option value="Benglore">Benglore</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
             </div>
         </form>
     </div>

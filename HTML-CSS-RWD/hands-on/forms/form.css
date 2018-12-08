@@ -1,4 +1,11 @@
-input:invalid {
+.invalid {
     border: 1px solid red;
 }
-
+.error {
+    color: red;
+    font-size: 10px;
+    display: none;
+}
+.nameErrorMsg {
+    display: block;
+}

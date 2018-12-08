@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSS-Specificity-Example</title>
+    <style>
+      ul#list li {
+        /* Specificity: 102 */
+        font-weight: normal;
+        font-size: 18px;
+        color: black;
+      }
+      .mydrink {
+        /* Specificity: 010 */
+        color: red;
+        font-weight: bold;
+      }
+
+      ul#list li.mydrink {
+        /* Specificity: 112 */
+        color: purple;
+        font-weight: bold;
+      }
+       /* Specificity: 1 */
+      li {
+          color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <ul id="list">
+        <li class="mydrink">Tea</li>
+        <li>Water</li>
+        <li>Juice</li>
+      </ul>
+    </div>
+  </body>
+</html>
