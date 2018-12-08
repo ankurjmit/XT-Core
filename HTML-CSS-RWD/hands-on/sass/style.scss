@@ -1,0 +1,22 @@
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    input {
+        font-size: 50px;
+        direction: rtl;
+    }
+    .container__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        button {
+            padding: 40px 60px;
+            margin-right: 5px;
+        }
+    }
+}
