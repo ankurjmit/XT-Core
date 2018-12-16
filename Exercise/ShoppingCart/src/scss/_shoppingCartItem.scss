@@ -1,0 +1,140 @@
+@media screen and (max-width : 600px){
+    .shoppingCartItem {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        padding: 10px;
+        border: 1px solid $primary-color;
+        .itemDetailBox {
+            display: flex;
+            flex-direction: row;
+            padding: 30px 10px;
+            .itemImage {
+                width:50%; 
+                padding: 10px;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .itemDetail {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                color: $primary-color;
+                padding: 10px;
+                .descriptionBox {
+                    display: flex;
+                    flex-direction: column;
+                    .description {
+                        .name {
+                            color : black;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .qty {
+                    margin: 20px 0px;
+                }
+                .price {
+                    font-size: 30px;
+                    color: black;
+                }
+                    
+            }
+        }
+        .mobileButtons {
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(207, 198, 198);
+        }
+        .desktopButtons {
+            display: none;
+        }   
+    }
+}
+
+@media screen and (min-width : 600px){
+    .shoppingCartItem {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        padding: 10px;
+        border-bottom: 1px solid $primary-color;
+        margin: 0 auto;
+        .itemDetailBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 30px 10px;
+            width: 100%;
+            .itemImage {
+                padding: 10px;
+                width: 20%;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .itemDetail {
+                width: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                color: rgb(218, 211, 211);
+                padding: 10px;
+                .descriptionBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 40%;
+                    padding: 10px;
+                    .description {
+                        .name {
+                            color : black;
+                            font-size: 30px;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            padding: 5px 0;
+                        }
+                        .style {
+                            font-size: 20px;
+                            padding: 5px 0;
+                        }
+                    }
+                    .desktopButtons{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 20px;
+                        .remove {
+                            padding: 10px;
+
+                        }
+                        button {
+                            font-size: 20px;
+                            color: #dad3d3;
+                            background: white;
+                            outline: none;
+                            border: 0;
+                        }
+                    }
+                }
+                .size {
+                    width: 20%;
+                    padding: 10px;
+                }
+                .qty {
+                    width: 20%;
+                    padding: 10px;
+                }
+                .price {
+                    font-size: 30px;
+                    padding: 10px;
+                    color: black;
+                    width: 20%;
+                }
+            }
+        }
+        .mobileButtons {
+            display: none;
+        }
+    }
+}

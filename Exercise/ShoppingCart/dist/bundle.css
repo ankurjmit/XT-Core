@@ -1,0 +1,381 @@
+@media screen and (max-width: 600px) {
+  .shoppingCartItem {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #dad3d3;
+  }
+  .shoppingCartItem .itemDetailBox {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10px;
+  }
+  .shoppingCartItem .itemDetailBox .itemImage {
+    width: 50%;
+    padding: 10px;
+  }
+  .shoppingCartItem .itemDetailBox .itemImage img {
+    max-width: 100%;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #dad3d3;
+    padding: 10px;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .descriptionBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .descriptionBox .description .name {
+    color: black;
+    font-size: 30px;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .qty {
+    margin: 20px 0px;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .price {
+    font-size: 30px;
+    color: black;
+  }
+  .shoppingCartItem .mobileButtons {
+    display: flex;
+    justify-content: space-evenly;
+    color: #cfc6c6;
+  }
+  .shoppingCartItem .desktopButtons {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .shoppingCartItem {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    padding: 10px;
+    border-bottom: 1px solid #dad3d3;
+    margin: 0 auto;
+  }
+  .shoppingCartItem .itemDetailBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10px;
+    width: 100%;
+  }
+  .shoppingCartItem .itemDetailBox .itemImage {
+    padding: 10px;
+    width: 20%;
+  }
+  .shoppingCartItem .itemDetailBox .itemImage img {
+    max-width: 100%;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #dad3d3;
+    padding: 10px;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .descriptionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    padding: 10px;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .descriptionBox .description .name {
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 0;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .descriptionBox .description .style {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .descriptionBox .desktopButtons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .descriptionBox .desktopButtons .remove {
+    padding: 10px;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .descriptionBox .desktopButtons button {
+    font-size: 20px;
+    color: #dad3d3;
+    background: white;
+    outline: none;
+    border: 0;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .size {
+    width: 20%;
+    padding: 10px;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .qty {
+    width: 20%;
+    padding: 10px;
+  }
+  .shoppingCartItem .itemDetailBox .itemDetail .price {
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    width: 20%;
+  }
+  .shoppingCartItem .mobileButtons {
+    display: none;
+  }
+}
+.shoppingCartHeading {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .billingSection {
+    display: flex;
+    padding: 50px;
+  }
+  .billingSection .helpSection {
+    display: none;
+    width: 30%;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 1px;
+  }
+  .billingSection .helpSection .help {
+    font-weight: bold;
+    padding: 30px 0;
+  }
+  .billingSection .helpSection .care {
+    color: #dad3d3;
+    padding: 30px 0;
+    display: block;
+  }
+  .billingSection .billing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .billingSection .billing .subtotal, .billingSection .billing .finalTotal, .billingSection .billing .shipping, .billingSection .billing .promoCodeApplied {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10px;
+  }
+  .billingSection .billing .subtotal .left, .billingSection .billing .finalTotal .left, .billingSection .billing .shipping .left, .billingSection .billing .promoCodeApplied .left {
+    width: 50%;
+  }
+  .billingSection .billing .subtotal .left .leftHeading, .billingSection .billing .finalTotal .left .leftHeading, .billingSection .billing .shipping .left .leftHeading, .billingSection .billing .promoCodeApplied .left .leftHeading {
+    text-transform: uppercase;
+  }
+  .billingSection .billing .subtotal .left .leftSubHeading, .billingSection .billing .finalTotal .left .leftSubHeading, .billingSection .billing .shipping .left .leftSubHeading, .billingSection .billing .promoCodeApplied .left .leftSubHeading {
+    font-size: 15px;
+    color: #757272;
+  }
+  .billingSection .billing .promoCode {
+    padding: 30px;
+  }
+  .billingSection .billing .promoCode label {
+    padding: 10px;
+  }
+  .billingSection .billing .promoCode .promoCodeInputBox {
+    display: flex;
+  }
+  .billingSection .billing .promoCode .promoCodeInputBox input {
+    font-size: 30px;
+    width: 50%;
+    margin-right: 10px;
+  }
+  .billingSection .billing .promoCode .promoCodeInputBox button {
+    padding: 20px;
+    width: 50%;
+    font-size: 20px;
+    background: blue;
+    color: white;
+  }
+  .billingSection .billing .checkoutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 50px;
+    margin: 0 auto;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons .checkoutBtn {
+    width: 100%;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons .checkoutBtn button {
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    background: blue;
+    color: white;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons .continueShopping {
+    width: 100%;
+    text-align: center;
+    padding: 30px 10px;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons .continueShopping a {
+    color: #817b7b;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  .billingSection .billing .checkoutContainer .secureMsg, .billingSection .billing .checkoutContainer .signInMsg {
+    text-align: center;
+    color: #817b7b;
+    font-size: 20px;
+    word-spacing: 5px;
+    padding: 20px 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .billingSection {
+    display: flex;
+    padding: 50px;
+  }
+  .billingSection .helpSection {
+    width: 30%;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 1px;
+  }
+  .billingSection .helpSection .help {
+    font-weight: bold;
+    padding: 30px 0;
+  }
+  .billingSection .helpSection .care {
+    color: #dad3d3;
+    padding: 30px 0;
+    display: block;
+  }
+  .billingSection .billing {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .billingSection .billing .subtotal, .billingSection .billing .finalTotal, .billingSection .billing .shipping, .billingSection .billing .promoCodeApplied {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10px;
+  }
+  .billingSection .billing .subtotal .left, .billingSection .billing .finalTotal .left, .billingSection .billing .shipping .left, .billingSection .billing .promoCodeApplied .left {
+    width: 50%;
+  }
+  .billingSection .billing .subtotal .left .leftHeading, .billingSection .billing .finalTotal .left .leftHeading, .billingSection .billing .shipping .left .leftHeading, .billingSection .billing .promoCodeApplied .left .leftHeading {
+    text-transform: uppercase;
+  }
+  .billingSection .billing .subtotal .left .leftSubHeading, .billingSection .billing .finalTotal .left .leftSubHeading, .billingSection .billing .shipping .left .leftSubHeading, .billingSection .billing .promoCodeApplied .left .leftSubHeading {
+    font-size: 15px;
+    color: #757272;
+  }
+  .billingSection .billing .promoCode {
+    padding: 30px 0;
+  }
+  .billingSection .billing .promoCode form {
+    display: flex;
+  }
+  .billingSection .billing .promoCode form label {
+    padding: 10px;
+    width: 40%;
+  }
+  .billingSection .billing .promoCode form .promoCodeInputBox {
+    width: 60%;
+    display: flex;
+  }
+  .billingSection .billing .promoCode form .promoCodeInputBox input {
+    font-size: 30px;
+    width: 50%;
+    margin-right: 10px;
+  }
+  .billingSection .billing .promoCode form .promoCodeInputBox button {
+    padding: 20px;
+    width: 50%;
+    font-size: 20px;
+    background: blue;
+    color: white;
+  }
+  .billingSection .billing .checkoutContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons .checkoutBtn {
+    width: 30%;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons .checkoutBtn button {
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    background: blue;
+    color: white;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons .continueShopping {
+    width: 70%;
+    text-align: right;
+    padding: 20px 50px;
+  }
+  .billingSection .billing .checkoutContainer .checkoutButtons .continueShopping a {
+    color: #817b7b;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .billingSection .billing .checkoutContainer .secureMsg, .billingSection .billing .checkoutContainer .signInMsg {
+    text-align: right;
+    color: #817b7b;
+    font-size: 25px;
+    word-spacing: 10px;
+    padding: 20px 20px;
+    margin-top: 40px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 60px) {
+  body {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=bundle.css.map */

@@ -1,0 +1,223 @@
+@media screen and (max-width : 600px){
+    .billingSection{
+        display: flex;
+        padding: 50px;
+        .helpSection {
+            display: none;
+            width: 30%;
+            padding: 10px;
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: 1px;
+            .help {
+                font-weight: bold;
+                padding: 30px 0;
+            }
+            .care {
+                color: $primary-color;
+                padding: 30px 0;
+                display: block;
+            }
+        }
+        .billing {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            font-size: 20px;
+            .subtotal,.finalTotal,.shipping,.promoCodeApplied {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 30px 10px;
+                .left {
+                    width: 50%;
+                    .leftHeading {
+                        text-transform: uppercase;
+                    }
+                    .leftSubHeading {
+                        font-size: 15px;
+                        color: rgb(117, 114, 114);
+                    }
+                }
+            }
+            .promoCode {
+                padding: 30px;
+                label {
+                    padding: 10px;
+                }
+                .promoCodeInputBox {
+                    display: flex;
+                    input {
+                        font-size: 30px;
+                        width: 50%;
+                        margin-right: 10px;
+                    }
+                    button {
+                        padding: 20px;
+                        width: 50%;
+                        font-size: 20px;
+                        background: blue;
+                        color: white;
+                    }
+                }
+                
+            }
+            .checkoutContainer {
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                padding: 50px;
+                margin: 0 auto;
+                .checkoutButtons {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    .checkoutBtn {
+                        width: 100%;
+                        button {
+                            padding: 20px;
+                            width: 100%;
+                            font-size: 20px;
+                            background: blue;
+                            color: white;
+                        }
+                    }
+                    .continueShopping {
+                        width: 100%;
+                        text-align: center;
+                        padding: 30px 10px;
+                        a {
+                            color: rgb(129, 123, 123);
+                            font-size: 20px;
+                            letter-spacing: 4px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .secureMsg,.signInMsg {
+                    text-align: center;
+                    color: rgb(129, 123, 123);
+                    font-size: 20px;
+                    word-spacing: 5px;
+                    padding: 20px 20px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 600px){
+    .billingSection{
+        display: flex;
+        padding: 50px;
+        .helpSection {
+            width: 30%;
+            padding: 10px;
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: 1px;
+            .help {
+                font-weight: bold;
+                padding: 30px 0;
+            }
+            .care {
+                color: $primary-color;
+                padding: 30px 0;
+                display: block;
+            }
+        }
+        .billing {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            font-size: 20px;
+            .subtotal,.finalTotal,.shipping,.promoCodeApplied {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 30px 10px;
+                .left {
+                    width: 50%;
+                    .leftHeading {
+                        text-transform: uppercase;
+                    }
+                    .leftSubHeading {
+                        font-size: 15px;
+                        color: rgb(117, 114, 114);
+                    }
+                }
+            }
+            .promoCode {
+                padding: 30px 0;
+                form{
+                    display: flex;
+                    label {
+                        padding: 10px;
+                        width: 40%;
+                    }
+                    .promoCodeInputBox {
+                        width: 60%;
+                        display: flex;
+                        input {
+                            font-size: 30px;
+                            width: 50%;
+                            margin-right: 10px;
+                        }
+                        button {
+                            padding: 20px;
+                            width: 50%;
+                            font-size: 20px;
+                            background: blue;
+                            color: white;
+                        }
+                    }
+                   
+                }
+                
+            }
+            .checkoutContainer {
+                display: flex;
+                flex-direction: column;
+                padding: 50px 0;
+                .checkoutButtons {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-flow: row-reverse;
+                    justify-content: flex-end;
+                    .checkoutBtn {
+                        width: 30%;
+                        button {
+                            padding: 20px;
+                            width: 100%;
+                            font-size: 20px;
+                            background: blue;
+                            color: white;
+                        }
+                    }
+                    .continueShopping {
+                        width: 70%;
+                        text-align: right;
+                        padding: 20px 50px;
+                        a {
+                            color: rgb(129, 123, 123);
+                            font-size: 20px;
+                            letter-spacing: 3px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .secureMsg,.signInMsg {
+                    text-align: right;
+                    color: #817b7b;
+                    font-size: 25px;
+                    word-spacing: 10px;
+                    padding: 20px 20px;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

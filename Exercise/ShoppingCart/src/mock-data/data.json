@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "name": "Red T-Shirt",
+            "size": "S",
+            "style": "STY1",
+            "color": "red",
+            "price": "100",
+            "quantity": 2,
+            "imageUrl": "src/images/t-shirt1.jpg"
+        },
+        {
+            "name": "Green T-Shirt",
+            "size": "S",
+            "style": "STY2",
+            "color": "green",
+            "price": 200,
+            "quantity": 1,
+            "imageUrl": "src/images/t-shirt1.jpg"
+        },
+        {
+            "name": "Blue T-Shirt",
+            "size": "S",
+            "style": "STY3",
+            "color": "blue",
+            "quantity": 1,
+            "price": 300,
+            "imageUrl": "src/images/t-shirt1.jpg"
+        }
+    ]
+}

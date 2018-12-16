@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ATM Money Dispenser</title>
+    <link rel="stylesheet" href="moneyDispanser.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>ATM Money Dispenser</h1>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left">
+                <div class="left__inputBox">
+                    <h2 class="left__inputBox--heading">Welcome to ATM</h2>
+                    <form>
+                        <label for="amount" class="left__inputBox--label">Enter the Amount</label>
+                        <input class="left__inputBox--input" type="number" id="amountToWithdraw" autofocus>
+                        <button type="button" class="left__inputBox--btn disabled" id="getMoney" disabled>Get Money</button>
+                    </form>
+                </div>
+            </div>
+            <div class="right"> 
+                <div class="right__heading">
+                    <p>You will get following amount</p>
+                </div>
+                <div class="right__noteDetailRow">
+                    <div class="right__noteDetailRow--col"><span id="note-of-1">0</span> notes of Rs 1</div>
+                    <div class="right__noteDetailRow--col"><span id="note-of-2">0</span> notes of Rs 2</div>
+                </div>
+                <div class="right__noteDetailRow">
+                    <div class="right__noteDetailRow--col"><span id="note-of-5">0</span> notes of Rs 5</div>
+                    <div class="right__noteDetailRow--col"><span id="note-of-10">0</span> notes of Rs 10</div>
+                </div>
+                <div class="right__noteDetailRow">
+                    <div class="right__noteDetailRow--col"><span id="note-of-20">0</span> notes of Rs 20</div>
+                    <div class="right__noteDetailRow--col"><span id="note-of-50">0</span> notes of Rs 50</div>
+                </div>
+                <div class="right__noteDetailRow">
+                    <div class="right__noteDetailRow--col"><span id="note-of-100">0</span> notes of Rs 100</div>
+                    <div class="right__noteDetailRow--col"><span id="note-of-200">0</span> notes of Rs 200</div>
+                </div>
+                <div class="right__noteDetailRow">
+                    <div class="right__noteDetailRow--col"><span id="note-of-500">0</span> notes of Rs 500</div>
+                    <div class="right__noteDetailRow--col"><span id="note-of-2000">0</span> notes of Rs 2000</div>
+                </div>
+                <div class="right__finalCount">Total notes dispensed : <span id="total-notes">0</span></div>
+            </div>
+        </div>
+    </main>
+    <script src="moneyDispanser.js"></script>
+</body>
+
+</html>
