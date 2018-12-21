@@ -18,8 +18,28 @@ app.post('/api/profiles/add', (req, res) => {
         })
 })
 
+app.get('/api/profiles/:id', (req, res) => {
+    profileService.viewProfileById(req.params.id)
+        .then(response => {
+            res.end(JSON.stringify(response));
+        })
+        .catch(err => {
+            console.log(err)
+        })
+})
+
+app.delete('/api/profiles/:id', (req, res) => {
+    profileService.removeProfileById(req.params.id)
+        .then(response => {
+            res.end(JSON.stringify(response));
+        })
+        .catch(err => {
+            console.log(err)
+        })
+})
+
 app.get('/api/profiles', (req, res) => {
-    profileService.viewAllProfiles(req.body)
+    profileService.viewAllProfiles()
         .then(response => {
             res.end(JSON.stringify(response));
         })

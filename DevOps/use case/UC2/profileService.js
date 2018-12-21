@@ -26,6 +26,22 @@ class ProfileService {
             })
         })
     }
+    viewProfileById(id) {
+        return new Promise((resolve, reject) => {
+            dataAccessLayer.viewProfileById(id,(err, data) => {
+                if (err) reject(err);
+                resolve(data);
+            })
+        })
+    }
+    removeProfileById(id) {
+        return new Promise((resolve, reject) => {
+            dataAccessLayer.removeProfileById(id,(err, data) => {
+                if (err) reject(err);
+                resolve(data);
+            })
+        })
+    }
 }
 
 module.exports = ProfileService;
