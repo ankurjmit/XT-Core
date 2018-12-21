@@ -21,7 +21,7 @@
 1. npm init
 2. npm start
 3. Open postman and try below urls
-4. http://localhost:8080/api/profiles/16 -> get methid for getting profile with 16 as id
-5. http://localhost:8080/api/profiles/16 -> delete methid for removing profile with 16 as id
-6. http://localhost:8080/api/profiles/add -> post methid to add profile  and pass body as {"name":"Ankur","city":"gurgaon"}
-7. http://localhost:8080/api/profiles-> get methid for listing all profiles
+4. http://localhost:8080/api/profiles/16 -> get method for getting profile with 16 as id
+5. http://localhost:8080/api/profiles/16 -> delete method for removing profile with 16 as id
+6. http://localhost:8080/api/profiles/add -> post method to add profile  and pass body as {"name":"Ankur","city":"gurgaon"}
+7. http://localhost:8080/api/profiles-> get method for listing all profiles
