@@ -1,0 +1,28 @@
+.categoryItem {
+    width: 80%;
+    display: flex;
+    padding: 50px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: center;
+}
+.categoryItem__photo {
+    width: 50%;
+    margin: 0 auto;
+}
+.categoryItem__photo img{
+    width: 50%;
+}
+.categoryBorder {
+    height: 3px;
+    background-image: linear-gradient(to right, white, rgb(138, 133, 133), white);
+}
+.categoryItem__details {
+    width: 50%;
+}
+.categoryItem__details--btn {
+    padding: 10px;
+    background: #FF00A1;
+    color: white;
+}

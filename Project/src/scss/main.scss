@@ -1,6 +1,2 @@
 @import './colors';
-
-body {
-    background: $red;
-    color: $grey;
-}
+@import './../js/components/home/homeComponent';

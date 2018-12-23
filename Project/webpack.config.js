@@ -7,8 +7,7 @@ const path = require('path');
 const configObject = {
     //Bundling
     entry: {
-        lodash: './src/js/_lodash.js',
-        index: './src/js/index.js'
+        index: './src/js/app.js'
     },
 
     output: {

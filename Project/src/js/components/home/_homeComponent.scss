@@ -1,0 +1,14 @@
+@import './carousel/carouselComponent';
+@import './categoty/categoryItemComponent';
+@import './../header/headerComponent';
+@import './../footer/footerComponent';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.home {
+    width: 80%;
+    margin: 0 auto;
+}
