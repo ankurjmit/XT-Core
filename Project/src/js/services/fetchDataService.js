@@ -10,4 +10,9 @@ export default class FetchDataService {
         return fetch("server/categories/index.get.json")
         .then(res => res.json());
     }
+
+    getProductsData(){
+        return fetch("server/products/index.get.json")
+        .then(res => res.json());
+    }
 }

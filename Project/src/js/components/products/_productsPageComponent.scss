@@ -1,0 +1,40 @@
+@import './product/productsComponent';
+@import './sidebar/sidebarComponent';
+
+@media only screen and (max-width: 600px) {
+    .productPage {
+        display: flex;
+        flex-direction: column;
+        .sidebar {
+            width: 100;
+        }
+        .products {
+            width: 100%
+        }
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    .productPage {
+        display: flex;
+        .sidebar{
+            width: 20%;
+            background: $light-grey;
+        }
+        .products {
+            width: 80%
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .productPage {
+        display: flex;
+        .sidebar{
+            width: 17%;
+            background: $light-grey;
+        }
+        .products {
+            width: 83%
+        }
+    }
+}

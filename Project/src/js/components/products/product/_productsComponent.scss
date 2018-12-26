@@ -1,0 +1,7 @@
+@import './productItem/productItemComponent';
+
+.productItemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}

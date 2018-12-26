@@ -1,0 +1,45 @@
+@media only screen and (max-width: 600px) {
+    .categoriesContainer {
+        display: none;
+    }
+    .categoriesContainerMobile {
+        .categoriesListMobile  {
+            font-family: inherit;
+            width: 100%;
+            background: #d23457;
+            padding: 15px 30px;
+            font-size: 20px;
+            line-height: 20px;
+            color: white;
+            letter-spacing: 1px;
+        }
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    .categoriesContainer {
+        .categoriesList {
+            list-style: none;
+            font-family: inherit;
+            font-size: 20px;
+            .category {
+                padding: 20px;
+                border-bottom: 2px solid grey;
+                font-size: 17px;
+                line-height: 20px;
+                color: #4e4b4b;
+                cursor: pointer;
+            }
+            .category:hover {
+                background: $primary-red;
+                color: black;
+            }
+            .activeCategory {
+                background: $primary-red;
+            }
+        }
+    }
+    .categoriesContainerMobile {
+        display: none;
+    }
+}

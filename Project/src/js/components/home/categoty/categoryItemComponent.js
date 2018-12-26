@@ -5,7 +5,7 @@ export default class CategoryItemComponent {
     }
     render(){
         const markup = `
-        <div class="categoryBorder"></div>
+        <div class="categoryBorder">&nbsp;</div>
         <div class="categoryItem" style="${this.props.position ? 'flex-direction: row' : 'flex-direction: row-reverse'}">
             <div class="categoryItem__photo">
                 <img src=${this.props.data.imageUrl} alt=${this.props.data.name}>

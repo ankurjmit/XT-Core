@@ -12,8 +12,8 @@ export default class HeaderComponent {
             </div>
             <div class="navigation">
                 <ul>
-                    <li>Home</li>
-                    <li>Products</li>
+                <li><a href="/Project/index.html">Home</a></li>
+                <li><a href="/Project/products.html">Products</a></li>
                 </ul>
             </div>
             <div class="headerRight">

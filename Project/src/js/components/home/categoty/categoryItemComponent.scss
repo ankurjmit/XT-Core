@@ -15,8 +15,9 @@
     width: 50%;
 }
 .categoryBorder {
-    height: 3px;
-    background-image: linear-gradient(to right, white, rgb(138, 133, 133), white);
+    background: radial-gradient(at 50% 0,rgb(138, 136,136), transparent 50%);
+    background-size: 100% 8px;
+    background-repeat: no-repeat;
 }
 .categoryItem__details {
     width: 50%;
