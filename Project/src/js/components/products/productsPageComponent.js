@@ -3,19 +3,20 @@ import SidebarComponent from './sidebar/sidebarComponent';
 import FetchDataService from './../../services/fetchDataService';
 
 export default class ProductsPageComponent {
-    constructor(parent) {
-        this.selectedCategory = null;
-        this.parent = parent;
+    constructor(props) {
+        this.selectedCategory = props.selectedCategory ? props.selectedCategory : null;
+        console.log(this.selectedCategory);
+        this.parent = props.parent;
         this.fetchDataService = new FetchDataService();
         this.fetchDataService.getProductsData()
             .then((resProductsData) => {
-                this.productsData = resProductsData;
+                // this.productsData = resProductsData;
                 this.totalProducts = resProductsData;
                 return this.fetchDataService.getCategoriesData();
             })
             .then((resCategoriesData) => {
                 this.categoriesData = resCategoriesData.filter(category => { return category.enabled })
-                this.render();
+                this.reRender();
             })
             .catch((err) => {
                 console.log(err);

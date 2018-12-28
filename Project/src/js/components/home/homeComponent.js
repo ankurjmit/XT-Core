@@ -3,9 +3,9 @@ import CarouselComponent from './carousel/carouselComponent';
 import CategoryItemComponent from './categoty/categoryItemComponent';
 
 export default class HomeComponent {
-    constructor(parent) {
+    constructor(props) {
         this.slideIndex = 1;
-        this.parent = parent;
+        this.parent = props.parent;
         this.fetchDataService = new FetchDataService();
         this.fetchDataService.getCarouselData()
             .then((resCarouselData) => {
