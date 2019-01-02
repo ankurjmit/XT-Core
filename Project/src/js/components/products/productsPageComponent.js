@@ -5,12 +5,10 @@ import FetchDataService from './../../services/fetchDataService';
 export default class ProductsPageComponent {
     constructor(props) {
         this.selectedCategory = props.selectedCategory ? props.selectedCategory : null;
-        console.log(this.selectedCategory);
         this.parent = props.parent;
         this.fetchDataService = new FetchDataService();
         this.fetchDataService.getProductsData()
             .then((resProductsData) => {
-                // this.productsData = resProductsData;
                 this.totalProducts = resProductsData;
                 return this.fetchDataService.getCategoriesData();
             })

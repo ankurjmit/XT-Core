@@ -5,8 +5,6 @@ import FooterComponent from './components/footer/footerComponent';
 import ProductsPageComponent from './components/products/productsPageComponent';
 import SignupComponent from './components/signup/signupComponent';
 import SigninComponent from './components/signin/signinComponent';
-import CartComponent from './components/cart/cartComponent';
-
 
 export default class appCompoennt {
    constructor() {

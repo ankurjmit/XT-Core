@@ -3,6 +3,7 @@
 
 @media only screen and (max-width: 600px) {
     .productPage {
+        width: 100%;
         display: flex;
         flex-direction: column;
         .sidebar {
@@ -16,6 +17,21 @@
 }
 @media only screen and (min-width: 600px) {
     .productPage {
+        width: 100%;
+        display: flex;
+        .sidebar{
+            width: 25%;
+            background: $light-grey;
+        }
+        .products {
+            width: 75%
+        }
+    }
+}
+@media only screen and (min-width: 769px) {
+    .productPage {
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         .sidebar{
             width: 20%;
@@ -26,15 +42,16 @@
         }
     }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .productPage {
+        width: 80%;
         display: flex;
         .sidebar{
-            width: 17%;
+            width: 20%;
             background: $light-grey;
         }
         .products {
-            width: 83%
+            width: 80%
         }
     }
 }

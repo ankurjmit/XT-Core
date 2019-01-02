@@ -12,17 +12,18 @@
             line-height: 20px;
             color: white;
             letter-spacing: 1px;
+            appearance: none; 
         }
     }
 
 }
 @media only screen and (min-width: 600px) {
     .categoriesContainer {
-        .categoriesList {
+        &__categoriesList {
             list-style: none;
             font-family: inherit;
-            font-size: 20px;
-            .category {
+            font-size: 2rem;
+            &--category {
                 padding: 20px;
                 border-bottom: 2px solid grey;
                 font-size: 17px;
@@ -30,12 +31,13 @@
                 color: #4e4b4b;
                 cursor: pointer;
             }
-            .category:hover {
+            &--category:hover {
                 background: $primary-red;
                 color: black;
             }
             .activeCategory {
                 background: $primary-red;
+                color: black;
             }
         }
     }

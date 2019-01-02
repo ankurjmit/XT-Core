@@ -3,16 +3,16 @@ export default class FetchDataService {
 
     }
     getCarouselData(){
-        return fetch("server/banners/index.get.json")
+        return fetch('http://localhost:3000/banners')
         .then(res => res.json());
     }
     getCategoriesData(){
-        return fetch("server/categories/index.get.json")
+        return fetch("http://localhost:3000/categories")
         .then(res => res.json());
     }
 
     getProductsData(){
-        return fetch("server/products/index.get.json")
+        return fetch("http://localhost:3000/products")
         .then(res => res.json());
     }
 }

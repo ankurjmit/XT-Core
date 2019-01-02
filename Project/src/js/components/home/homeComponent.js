@@ -33,7 +33,7 @@ export default class HomeComponent {
     }
 
     carouselShowSlide(slideNo) {
-        var slides = $('.slide');
+        var slides = $('.carouselContainer__slide');
         var dots = $('.dot');
         if (slideNo > slides.length) { this.slideIndex = 1 }
         if (slideNo < 1) { this.slideIndex = slides.length }
@@ -52,15 +52,15 @@ export default class HomeComponent {
     render() {
         const markup = `
         <div class="home">
-            <section class="carousel-container">
+            <section class="carousel">
             </section>
-            <section class="categories-container">
+            <section class="categories">
             </section>
         </div>
         `
         $(this.parent).html(markup);
-        this.carouselElement = $('.carousel-container');
-        this.categoriesElement = $('.categories-container');
+        this.carouselElement = $('.carousel');
+        this.categoriesElement = $('.categories');
         new CarouselComponent({ element: this.carouselElement, data: this.carouselData, carouselShowSlide: this.carouselShowSlide, carouselPlusSlides: this.carouselPlusSlides, carouselCurrentSlide: this.carouselCurrentSlide });
         this.categoriesData.forEach((category,index) => {
             new CategoryItemComponent({ element: this.categoriesElement, data: category,position:index%2==0 });

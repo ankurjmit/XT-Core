@@ -3,11 +3,11 @@ export default class ProductsService {
 
     }
     getProducts() {
-        return fetch("server/products/index.get.json")
+        return fetch("http://localhost:3000/products")
             .then(_ => _.json())
     }
     static getProductsById(productId) {
-        return fetch("server/products/index.get.json")
+        return fetch("http://localhost:3000/products")
             .then(_ => _.json())
             .then(producs => {
                 return producs.find(product => product.id == productId)

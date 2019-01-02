@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "webpack --watch",
     "build-prod": "webpack",
-    "start": "canned -p 5000 ./server"
+    "start": "canned -p 3000 ./server"
   },
   "author": "",
   "license": "ISC",
