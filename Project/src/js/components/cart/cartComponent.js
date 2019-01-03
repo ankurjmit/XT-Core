@@ -1,6 +1,7 @@
 import CartService from './../../services/cartService';
 import CartItemComponent from './cartItem/cartItemComponent';
 import ProductsService from './../../services/productsService';
+import HeaderComponent from './../header/headerComponent';
 
 
 export default class CartComponent {
@@ -9,12 +10,13 @@ export default class CartComponent {
         this.parent = props.parent;
         this.cartService = new CartService();
         this.updateQuantity = this.updateQuantity.bind(this);
-        this.render()
+        this.render();
     }
 
     render() {
         const markup = `
         <div class="cart">
+            <div class="cart__navHeader"></div>
             <div class="cart__header">
                 <div class="cart__header--title">My Cart ( <span class="cart__header--count">0</span> item)</div>
                 <div class="cart__header--close">X</div>
@@ -26,10 +28,12 @@ export default class CartComponent {
                 </div>
             </div>
             <div class="lowerPriceLabel">
-                <div class="lowerPriceLabel--img">
-                    <img src="../../static/images/lowest-price.png" alt="lowest-price">
+                <div class="lowerPriceLabelContent">
+                    <div class="lowerPriceLabel--img">
+                        <img src="../../static/images/lowest-price.png" alt="lowest-price">
+                    </div>
+                    <div class="lowerPriceLabel--text">You wont't find it cheaper anywhere</div>
                 </div>
-                <div class="lowerPriceLabel--text">You wont't find it cheaper anywhere</div>
             </div>
             <div class="promoCode">
                 <p>Promo code can be applied on payment page</p>
@@ -45,13 +49,18 @@ export default class CartComponent {
         `;
         $(this.parent).html(markup);
         this.cartItemContainer = $('.cartItemContainer');
-        $('.cart__header--close,.startShopping,.checkout').on('click', () => {
+        this.cartNavHeaderContainer = $('.cart__navHeader');
+
+        $('.cart__header--close,.startShopping,.checkout,.cart__navHeader').on('click', () => {
             $('.overlay').css('display', 'none');
             $("body").css("overflow", "auto");
         })
         this.drawCartItems();
+        this.addNavigationHeader();
     }
-
+    addNavigationHeader(){
+        new HeaderComponent({ parent: this.cartNavHeaderContainer});
+    }
     drawCartItems() {
         this.cartTotal= 0;
         let cartItems = this.cartService.fetchCartItem();

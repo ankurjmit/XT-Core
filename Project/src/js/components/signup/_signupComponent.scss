@@ -1,77 +1,20 @@
-@media only screen and (max-width: 600px) {
-    .signupContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        .signupHeader {
-            width: 100%;
-            padding: 20px 10px;
-            p {
-                padding: 20px 0;
-                font-size: 15px;
-            }
-        }
-        .signupForm {
-            width: 100%
-        }
-    }
-}
-@media only screen and (min-width: 600px) {
-    .signupContainer {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 20px;
-        .signupHeader {
-            width: 50%;
-            padding: 20px 50px;
-            p {
-                padding: 20px 0;
-                font-size: 15px;
-            }
-        }
-        .signupForm {
-            width: 50%
-        }
-    }
-}
-@media only screen and (min-width: 768px) {
-    .signupContainer {
-        width: 70%;
-        display: flex;
-        flex-direction: row;
-        padding: 20px;
-        .signupHeader {
-            width: 50%;
-            padding: 20px 50px;
-            p {
-                padding: 20px 0;
-                font-size: 15px;
-            }
-        }
-        .signupForm {
-            width: 50%
-        }
-    }
-}
-.signupContainer {
+.signup {
     margin: 0 auto;
     padding: 20px;
-    
-    .signupForm {
-        .signup__box {
+    &__form {
+        &--box {
             position:relative;  
             width: 100%;
-            & + .signup__box {
+            & + .signup__form--box {
                 margin-top: 30px;
               }
             label {
                 display: block;
+                font-size: 1.5rem;
                 position: absolute;
                 left: 0;
                 top: 5px;
-                color: #999;
+                color: rgb(1, 97, 126);;
                 background-color: #fff;
                 z-index: 10;
                 transition: transform 150ms ease-out, font-size 150ms ease-out;
@@ -85,13 +28,13 @@
                 box-shadow: 0 1px 0 0 #e5e5e5;
                 transition: box-shadow 150ms ease-out;
                 &:focus {
-                    box-shadow: 0 2px 0 0 blue;
+                    box-shadow: 0 2px 0 0 rgb(1, 97, 126);
                 }
                 
             }
             button {
                 width: 100%;
-                background: red;
+                background: $primary-red;;
                 color: white;
                 padding: 10px;
                 font-size: 18px;
@@ -102,13 +45,83 @@
                 box-shadow: 0 2px 0 0 lightgreen;
               }
             input.empty {
-                box-shadow: 0 2px 0 0 red;
+                box-shadow: 0 2px 0 0 $primary-red;;
             }
         }
         .focused label {
             transform: translateY(-125%);
             font-size: .75em;
-            color: blue;
+            color: rgb(1, 97, 126);
+        }
+    }
+    .disabled {
+        opacity: .5;
+        cursor: not-allowed;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .signup {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        &__header {
+            width: 100%;
+            padding: 20px 10px;
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                padding: 20px 0;
+                font-size: 15px;
+            }
+        }
+        &__form {
+            width: 100%
+        }
+    }
+}
+@media only screen and (min-width: 600px) {
+    .signup{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        &__header {
+            width: 50%;
+            padding: 20px 50px;
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                padding: 20px 0;
+                font-size: 15px;
+            }
+        }
+        &__form {
+            width: 50%
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .signup {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        &__header {
+            width: 50%;
+            padding: 20px 50px;
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                padding: 20px 0;
+                font-size: 15px;
+            }
+        }
+        &__form {
+            width: 50%
         }
     }
 }

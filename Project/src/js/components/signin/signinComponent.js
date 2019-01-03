@@ -57,7 +57,5 @@ export default class SigninComponent {
         $(this.parent).find('input').blur(_ => this.inputblur(_));
         $(this.parent).find('#email').blur(_ => this.inputEmail(_));
         $(this.parent).find('#submit').prop('disabled', true);
-
     }
-
 }
