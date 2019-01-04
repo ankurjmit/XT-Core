@@ -1,18 +1,21 @@
+import axios from 'axios';
+
 export default class FetchDataService {
     constructor(){
 
     }
     getCarouselData(){
-        return fetch('http://localhost:3000/banners')
-        .then(res => res.json());
+        return axios.get('http://localhost:3000/banners')
+        .then(_=>_.data)
     }
     getCategoriesData(){
-        return fetch("http://localhost:3000/categories")
-        .then(res => res.json());
+        return axios.get("http://localhost:3000/categories")
+            .then(_=>_.data)
+        
     }
 
     getProductsData(){
-        return fetch("http://localhost:3000/products")
-        .then(res => res.json());
+        return axios.get("http://localhost:3000/products")
+        .then(_=>_.data)
     }
 }
