@@ -7,12 +7,14 @@ export default class CarouselComponent {
     }
 
     render() {
+       
+        
         let markup= `
         <div class="carouselContainer">`;
         this.data.forEach(slide=>{
             markup = `${markup}
                 <div class="carouselContainer__slide carouselContainer__fade">
-                    <img src=${slide.bannerImageUrl} alt=${slide.bannerImageAlt}>
+                    <img src=${slide.bannerImageUrl} alt="${slide.bannerImageAlt}">
                 </div>`
         });
 

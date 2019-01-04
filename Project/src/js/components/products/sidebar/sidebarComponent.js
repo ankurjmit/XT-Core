@@ -16,7 +16,7 @@ export default class SidebarComponent {
 
 
         // mobile view of categories
-        let markupMobile = `<div class="categoriesContainerMobile"><select class="categoriesListMobile"><option class="categoryMobile" id='All'>All</option> `;
+        let markupMobile = `<div class="categoriesContainerMobile"><label for="categotyFilter">&nbsp;</label><select id="categotyFilter" class="categoriesListMobile"><option class="categoryMobile" id='All'>All</option> `;
         let optionHtml=``;
         this.props.data.forEach((category)=>{
             optionHtml=`${optionHtml}<option class="categoryMobile" id=${category.id} value="${category.id}" ${category.id === this.props.selectedCategoryId ? 'selected' : ''}>${category.name}</option>`

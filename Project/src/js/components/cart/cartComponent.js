@@ -16,36 +16,40 @@ export default class CartComponent {
     render() {
         const markup = `
         <div class="cart" role="dialog">
-            <div class="cart__navHeader"></div>
-            <div class="cart__header">
-                <div class="cart__header--title">My Cart ( <span class="cart__header--count">0</span> item)</div>
-                <div class="cart__header--close">X</div>
-            </div>
-            <div class="cartItemContainer">
-                <div class="cartItemContainer__empty">
-                    <div class="emptyCartContent">
-                        <h3>No items in your cart</h3>
-                        <p>Your favourite items are just a click away </p>
+            <div class="cartContainer">
+                <div class="cart__navHeader"></div>
+                <div class="cart__header">
+                    <div class="cart__header--title">My Cart ( <span class="cart__header--count">0</span> item)</div>
+                    <div class="cart__header--close">X</div>
+                </div>
+                <div class="cartItemContainer">
+                    <div class="cartItemContainer__empty">
+                        <div class="emptyCartContent">
+                            <h3>No items in your cart</h3>
+                            <p>Your favourite items are just a click away </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lowerPriceLabel">
+                    <div class="lowerPriceLabelContent">
+                        <div class="lowerPriceLabel--img">
+                            <img src="../../static/images/lowest-price.png" alt="lowest-price">
+                        </div>
+                        <div class="lowerPriceLabel--text">You wont't find it cheaper anywhere</div>
                     </div>
                 </div>
             </div>
-            <div class="lowerPriceLabel">
-                <div class="lowerPriceLabelContent">
-                    <div class="lowerPriceLabel--img">
-                        <img src="../../static/images/lowest-price.png" alt="lowest-price">
-                    </div>
-                    <div class="lowerPriceLabel--text">You wont't find it cheaper anywhere</div>
+            <div class="cartFooter">
+                <div class="promoCode">
+                    <p>Promo code can be applied on payment page</p>
                 </div>
-            </div>
-            <div class="promoCode">
-                <p>Promo code can be applied on payment page</p>
-            </div>
-            <div class="startShopping" role="button">
-                Start Shopping
-            </div>
-            <div class="checkout" role="button">
-                <div>Proceed to Checkout</div>
-                <div class="checkout__amount">Rs. <span class="checkout__amount--total">0</span> <span class="checkout__arrow">></span></div>
+                <div class="startShopping" role="button">
+                    Start Shopping
+                </div>
+                <div class="checkout" role="button">
+                    <div>Proceed to Checkout</div>
+                    <div class="checkout__amount">Rs. <span class="checkout__amount--total">0</span> <span class="checkout__arrow">></span></div>
+                </div>
             </div>
         </div>;
         `;
