@@ -6,10 +6,13 @@ const path = require('path');
 
 const configObject = {
     //Bundling
+    // entry: {
+    //     index: './src/js/app.js'
+    // },
     entry: {
+        'babel-polyfill': ['@babel/polyfill'],
         index: './src/js/app.js'
     },
-
     output: {
         filename: '[name]-bundle.js',
         path: __dirname + '/dist'
