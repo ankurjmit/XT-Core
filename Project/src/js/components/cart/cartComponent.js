@@ -23,8 +23,10 @@ export default class CartComponent {
             </div>
             <div class="cartItemContainer">
                 <div class="cartItemContainer__empty">
-                    <h3>No items in your cart</h3>
-                    <p>Your favourite items are just a click away </p>
+                    <div class="emptyCartContent">
+                        <h3>No items in your cart</h3>
+                        <p>Your favourite items are just a click away </p>
+                    </div>
                 </div>
             </div>
             <div class="lowerPriceLabel">
