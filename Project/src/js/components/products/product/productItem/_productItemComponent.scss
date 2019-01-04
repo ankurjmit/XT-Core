@@ -68,7 +68,7 @@
             padding: 5px;
             font-size: 1.5rem;
             height: 50px;
-            overflow: scroll;
+            overflow: hidden;
             text-align: left;
         }
         .productItem__details {
@@ -88,7 +88,7 @@
                 display: flex;
                 flex-direction: column;
                 background: $light-grey;
-                overflow: scroll;
+                overflow: hidden;
                 border-radius: 5px;
                 height: 13rem;
                 &--text {
@@ -166,7 +166,7 @@
             flex-direction: column;
             background: $light-grey;
             height: 10rem;
-            overflow: scroll;
+            overflow: hidden;
             border-radius: 5px;
             &--text {
                 font-size: 1.5rem;

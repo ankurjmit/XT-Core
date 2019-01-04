@@ -17,7 +17,30 @@ export default class CartComponent {
         const markup = `
         <div class="cart" role="dialog">
             <div class="cartContainer">
-                <div class="cart__navHeader"></div>
+                <div class="cart__navHeader">
+                <nav class="header">
+                    <div class="headerContainer">
+                        <div class="headerContainer__logo" aria-label="logo" >
+                            <a href="#" ><img id="/" class="headerContainer__logo--img" src="./static/images/logo.png" alt="Sabka Bazaar"></a>
+                        </div>
+                        <div class="headerContainer__navigation">
+                            <ul role="menubar">
+                                <li><a role="menuitem" href="#" id="/">Home</a></li>
+                                <li><a role="menuitem" href="#" id="products">Products</a></li>
+                            </ul>
+                        </div>
+                        <div class="headerRight">
+                            <div class="loginContainer">
+                                <span class="login" aria-label="login"><a href="#" id="signin">SignIn</a></span>
+                                <span class="register" aria-label="register" ><a href="#" id="signup">Register</a></span>
+                            </div>
+                            <div class="cartIcon overlayContent">
+                                <img class="cartImg" src="./static/images/cart.svg" alt="cart"> <sapn id="cart" class="cartCount">0</span>
+                            </div>
+                        </div>
+                    <div>
+                </nav>
+                </div>
                 <div class="cart__header">
                     <div class="cart__header--title">My Cart ( <span class="cart__header--count">0</span> item)</div>
                     <div class="cart__header--close">X</div>
@@ -62,11 +85,8 @@ export default class CartComponent {
             $("body").css("overflow", "auto");
         })
         this.drawCartItems();
-        this.addNavigationHeader();
     }
-    addNavigationHeader(){
-        new HeaderComponent({ parent: this.cartNavHeaderContainer});
-    }
+
     drawCartItems() {
         this.cartTotal= 0;
         let cartItems = this.cartService.fetchCartItem();
