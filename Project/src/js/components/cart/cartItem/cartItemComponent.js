@@ -15,9 +15,9 @@ export default class CartItemComponent {
             <div class="cartItem__details">
                 <h3 class="cartItem__details--name">${product.name}</h3>
                 <div class="cartItem__details--quantity">
-                    <div class="cartItem__details--quantity--minus" id=minus${product.id}>-</div>
+                    <div role="button" class="cartItem__details--quantity--minus" id=minus${product.id}>-</div>
                     <div class="cartItem__details--quantity--number">${this.props.data.qty}</div>
-                    <div class="cartItem__details--quantity--plus" id=pluss${product.id}>+</div>
+                    <div role="button" class="cartItem__details--quantity--plus" id=pluss${product.id}>+</div>
                     <div class="cartItem__details--quantity--multiply">X</div>
                     <div class="cartItem__details--quantity--total">Rs.${product.price}</div>
                 </div>

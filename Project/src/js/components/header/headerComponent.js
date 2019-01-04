@@ -13,19 +13,19 @@ export default class HeaderComponent {
             `
         <nav class="header">
             <div class="headerContainer">
-                <div class="headerContainer__logo">
+                <div class="headerContainer__logo" aria-label="logo" >
                     <a href="#" ><img id="/" class="headerContainer__logo--img" src="./static/images/logo.png" alt="Sabka Bazaar"></a>
                 </div>
                 <div class="headerContainer__navigation">
-                    <ul>
-                        <li><a href="#" id="/">Home</a></li>
-                        <li><a href="#" id="products">Products</a></li>
+                    <ul role="menubar">
+                        <li><a role="menuitem" href="#" id="/">Home</a></li>
+                        <li><a role="menuitem" href="#" id="products">Products</a></li>
                     </ul>
                 </div>
                 <div class="headerRight">
                     <div class="loginContainer">
-                        <span class="login"><a href="#" id="signin">SignIn</a></span>
-                        <span class="register"><a href="#" id="signup">Register</a></span>
+                        <span class="login" aria-label="login"><a href="#" id="signin">SignIn</a></span>
+                        <span class="register" aria-label="register" ><a href="#" id="signup">Register</a></span>
                     </div>
                     <div class="cartIcon overlayContent">
                         <img class="cartImg" src="./static/images/cart.svg" alt="cart"> <sapn id="cart" class="cartCount">0</span>
