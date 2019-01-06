@@ -8,7 +8,6 @@ export default class CartService {
     addToCart(productId) {
         if (localStorage.getItem('cart')) {
             let cart = JSON.parse(localStorage.getItem('cart'));
-            console.log(cart.products);
             let indexOfProduct = cart.products.findIndex(product => product.id === productId);
             if (indexOfProduct != -1) {
                 cart.products[indexOfProduct].qty++
@@ -37,7 +36,7 @@ export default class CartService {
 
     }
     updateCartCount() {
-        let count;
+        let count = 0;
         if (localStorage.getItem('cart')) {
             let cart = JSON.parse(localStorage.getItem('cart'));
             count = cart.products.reduce((acc, curr) => acc + curr.qty, 0);

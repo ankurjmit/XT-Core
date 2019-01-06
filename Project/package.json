@@ -1,5 +1,5 @@
 {
-  "name": "mywebpack",
+  "name": "sabka-bazaar",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "build-prod": "webpack",
     "start": "canned -p 3000 ./server"
   },
-  "author": "",
+  "author": "Ankur Gupta (ankurjmit@gmail.com)",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",

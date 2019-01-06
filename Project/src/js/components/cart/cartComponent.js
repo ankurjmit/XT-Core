@@ -35,7 +35,7 @@ export default class CartComponent {
                                 <span class="register" aria-label="register" ><a href="#" id="signup">Register</a></span>
                             </div>
                             <div class="cartIcon overlayContent">
-                                <img class="cartImg" src="./static/images/cart.svg" alt="cart"> <sapn id="cart" class="cartCount">0</span>
+                                <img class="cartImg" src="./static/images/cart.svg" alt="cart"> <sapn id="cart" class="cartCount cartCountInPopupHeader">0</span>
                             </div>
                         </div>
                     <div>
@@ -85,6 +85,7 @@ export default class CartComponent {
             $("body").css("overflow", "auto");
         })
         this.drawCartItems();
+        this.updateCartCount();
     }
 
     drawCartItems() {
@@ -121,5 +122,13 @@ export default class CartComponent {
     reRender(){
         this.cartItemContainer.empty();
         this.render();
+    }
+    updateCartCount() {
+        let count = 0;
+        if (localStorage.getItem('cart')) {
+            let cart = JSON.parse(localStorage.getItem('cart'));
+            count = cart.products.reduce((acc, curr) => acc + curr.qty, 0);
+        }
+        $('.cartCountInPopupHeader').html(`${count} items`);
     }
 }
